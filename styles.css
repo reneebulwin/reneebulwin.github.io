@@ -1,0 +1,274 @@
+:root {
+  --cream: #f5f0e8;
+  --warm-white: #faf8f4;
+  --sage: #6b7c5c;
+  --sage-dark: #4a5a3d;
+  --sage-light: #8fa07e;
+  --brown: #7a6248;
+  --text: #2c2c2c;
+  --text-light: #6b6560;
+  --border: #ddd8cf;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Jost', sans-serif;
+  background: var(--warm-white);
+  color: var(--text);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: var(--warm-white);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.nav-brand { line-height: 1.1; text-decoration: none; }
+.nav-brand .name { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; letter-spacing: 0.05em; color: var(--text); }
+.nav-brand .tagline { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-light); }
+
+.nav-toggle { background: none; border: none; cursor: pointer; display: flex; flex-direction: column; gap: 5px; padding: 4px; }
+.nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--text); transition: all 0.3s; }
+
+.nav-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--cream);
+  z-index: 99;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.nav-menu.open { display: flex; }
+.nav-menu a {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+.nav-menu a:hover, .nav-menu a.active { color: var(--sage); }
+.nav-menu .btn-menu {
+  margin-top: 16px;
+  background: var(--sage);
+  color: white;
+  padding: 14px 40px;
+  border-radius: 100px;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+.nav-menu .btn-menu:hover { background: var(--sage-dark); color: white; }
+
+/* ── PAGE WRAPPER ── */
+.page-content { padding-top: 60px; }
+
+/* ── TYPOGRAPHY ── */
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+p { margin-bottom: 16px; font-size: 0.95rem; color: var(--text-light); }
+p:last-child { margin-bottom: 0; }
+
+a { color: var(--sage); }
+
+/* ── BUTTONS ── */
+.btn-primary {
+  display: inline-block;
+  background: var(--sage);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.btn-primary:hover { background: var(--sage-dark); color: white; }
+
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--sage);
+  padding: 13px 32px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  border: 1.5px solid var(--sage);
+  transition: all 0.2s;
+  text-align: center;
+}
+.btn-outline:hover { background: var(--sage); color: white; }
+
+.link-underline {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--sage);
+  text-decoration: none;
+  border-bottom: 1px solid var(--sage-light);
+  padding-bottom: 1px;
+  margin-top: 12px;
+}
+
+/* ── UTILITIES ── */
+.section-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.divider {
+  width: 40px;
+  height: 1px;
+  background: var(--sage-light);
+  margin: 24px 0;
+}
+
+.section-pad { padding: 56px 24px; }
+.cream-bg { background: var(--cream); }
+.white-bg { background: var(--warm-white); }
+
+.green-strip {
+  background: var(--sage);
+  color: white;
+  text-align: center;
+  padding: 40px 24px;
+}
+
+blockquote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--sage-dark);
+  border-left: 2px solid var(--sage-light);
+  padding-left: 20px;
+  margin: 24px 0;
+  line-height: 1.5;
+}
+
+blockquote cite {
+  display: block;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-top: 10px;
+}
+
+.green-strip blockquote { border-left: none; padding-left: 0; color: white; font-size: 1.3rem; }
+.green-strip blockquote cite { color: rgba(255,255,255,0.65); }
+
+/* ── PHOTO PLACEHOLDER ── */
+.photo-placeholder {
+  width: 100%;
+  background: #e8e2d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--warm-white);
+  border-top: 1px solid var(--border);
+  padding: 40px 24px 24px;
+}
+
+.footer-brand .name { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 500; }
+.footer-brand .tagline { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-light); margin-bottom: 8px; }
+.footer-brand .quote { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 0.95rem; color: var(--sage-dark); margin: 12px 0 16px; }
+.footer-email { font-size: 0.85rem; color: var(--text-light); margin-bottom: 32px; }
+.footer-email a { color: var(--sage); text-decoration: none; }
+
+.footer-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 32px; }
+.footer-nav-col h4 { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text); font-weight: 500; margin-bottom: 12px; }
+.footer-nav-col a { display: block; font-size: 0.9rem; color: var(--text-light); text-decoration: none; margin-bottom: 8px; }
+.footer-nav-col a:hover { color: var(--sage); }
+
+.footer-bottom { border-top: 1px solid var(--border); padding-top: 20px; font-size: 0.75rem; color: var(--text-light); line-height: 1.6; }
+.footer-disclaimer { margin-top: 10px; font-size: 0.72rem; color: var(--text-light); opacity: 0.8; }
+
+/* ── FADE IN ── */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ── FORMS ── */
+.form-group { margin-bottom: 18px; }
+.form-group label { display: block; font-size: 0.8rem; font-weight: 400; margin-bottom: 6px; color: var(--text); letter-spacing: 0.03em; }
+.form-group label .req { color: var(--sage); }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; padding: 10px 14px; border: 1px solid var(--border);
+  border-radius: 4px; font-family: 'Jost', sans-serif; font-size: 0.9rem;
+  font-weight: 300; color: var(--text); background: var(--warm-white);
+  outline: none; transition: border-color 0.2s;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--sage-light); }
+.form-group textarea { height: 100px; resize: vertical; }
+
+/* ── PROGRAM CARDS ── */
+.program-card { background: var(--warm-white); border-radius: 8px; padding: 28px 24px; margin-bottom: 20px; }
+.program-tag { font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--sage); font-weight: 500; margin-bottom: 10px; }
+.program-ideal { font-size: 0.8rem; color: var(--text-light); margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+.program-ideal strong { font-weight: 500; color: var(--text); font-size: 0.75rem; letter-spacing: 0.05em; text-transform: uppercase; }
+
+/* ── TALK CARDS ── */
+.talk-card { border-top: 1px solid var(--border); padding: 24px 0; }
+.talk-card:last-of-type { border-bottom: 1px solid var(--border); }
+.talk-number { font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--border); font-weight: 300; margin-bottom: 4px; }
+
+/* ── AUDIENCE LIST ── */
+.audience-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.audience-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.95rem; color: var(--text-light); }
+.audience-list li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--sage-light); margin-top: 8px; flex-shrink: 0; }
+
+/* ── CONTACT ── */
+.contact-row { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px; }
+.contact-icon { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--sage); font-size: 0.85rem; }
+.contact-label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin-bottom: 2px; }
+.contact-value { font-size: 0.95rem; color: var(--text); font-weight: 400; }
+.inquiry-form { background: white; border-radius: 8px; padding: 28px 20px; box-shadow: 0 2px 20px rgba(0,0,0,0.05); margin-top: 32px; }
+.inquiry-form .form-note { font-size: 0.8rem; color: var(--text-light); margin-bottom: 24px; }
