@@ -52,7 +52,10 @@ function getFooter() {
 }
 
 function toggleMenu() {
-  document.getElementById('navMenu').classList.toggle('open');
+  const menu = document.getElementById('navMenu');
+  const toggle = document.querySelector('.nav-toggle');
+  menu.classList.toggle('open');
+  toggle.classList.toggle('is-open');
 }
 
 function initPage() {
@@ -66,7 +69,7 @@ function initPage() {
   document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
       document.getElementById('navMenu').classList.remove('open');
+      document.querySelector('.nav-toggle').classList.remove('is-open');
     });
   });
 }
-
