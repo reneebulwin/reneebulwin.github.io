@@ -2,144 +2,272 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  <title>Booking | Renee Bulwin</title>
-  <meta name="description" content="Book Renee Bulwin for a speaking engagement, workshop, healing circle, or Reiki session." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking &amp; Contact | Renee Bulwin</title>
+  <meta name="description" content="Book Renee Bulwin for a speaking engagement, workshop, healing circle, or Reiki session. Get in touch to discuss how we can work together." />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<div id="nav-container"></div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<div class="page-content">
-
-  <div class="section-pad fade-in">
-    <p class="section-label">Get in Touch</p>
-    <h2>I look forward to hearing from you and discussing how we might work together.</h2>
-
-    <div style="margin-top: 32px;">
-      <h3>Direct Contact</h3>
-      <p>For general questions or pressing inquiries, please feel free to reach out directly using the contact information below.</p>
-
-      <div class="contact-row" style="margin-top: 20px;">
-        <div class="contact-icon">✉</div>
-        <div>
-          <div class="contact-label">Email</div>
-          <div class="contact-value">yourname@example.com</div>
-        </div>
-      </div>
-
-      <div class="contact-row">
-        <div class="contact-icon">☎</div>
-        <div>
-          <div class="contact-label">Phone</div>
-          <div class="contact-value">(555) 123-4567</div>
-        </div>
-      </div>
-
-      <div class="contact-row">
-        <div class="contact-icon">⊙</div>
-        <div>
-          <div class="contact-label">Location</div>
-          <div class="contact-value">Available Nationwide &amp; Virtual</div>
-        </div>
-      </div>
+  <header class="site-header" role="banner">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-brand" aria-label="Renee Bulwin — Bleed Into Purpose, go to home page">
+        <span class="name" aria-hidden="true">Renee Bulwin</span>
+        <span class="tagline" aria-hidden="true">Bleed Into Purpose</span>
+      </a>
+      <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </nav>
+    <div class="nav-menu" id="nav-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="speaking.html">Speaking</a>
+      <a href="programs.html">Programs</a>
+      <a href="resources.html">Resources</a>
+      <a href="booking.html" aria-current="page">Booking</a>
+      <a href="booking.html" class="btn-menu">Book a Session</a>
     </div>
+  </header>
 
-    <div class="inquiry-form fade-in">
-      <h3>Send an Inquiry</h3>
-      <p class="form-note">Fill out the form below and it will open a pre-filled email to send to me. (This can be connected to a form processor later.)</p>
+  <main id="main-content" class="page-content">
 
-      <div class="form-group">
-        <label>Full Name <span class="req">*</span></label>
-        <input type="text" placeholder="Jane Doe" id="fname" />
-      </div>
-      <div class="form-group">
-        <label>Organization (Optional)</label>
-        <input type="text" placeholder="Wellness Center" id="forg" />
-      </div>
-      <div class="form-group">
-        <label>Email Address <span class="req">*</span></label>
-        <input type="email" placeholder="jane@example.com" id="femail" />
-      </div>
-      <div class="form-group">
-        <label>Phone Number (Optional)</label>
-        <input type="tel" placeholder="(555) 123-4567" id="fphone" />
-      </div>
-      <div class="form-group">
-        <label>Type of Inquiry <span class="req">*</span></label>
-        <select id="ftype">
-          <option value="">Select one...</option>
-          <option>Speaking Engagement</option>
-          <option>Workshop or Program</option>
-          <option>Healing Circle</option>
-          <option>Reiki Session</option>
-          <option>Community Retreat</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Proposed Date</label>
-        <input type="text" placeholder="e.g. Fall 2024" id="fdate" />
-      </div>
-      <div class="form-group">
-        <label>Location / Virtual</label>
-        <input type="text" placeholder="City, State or Virtual" id="floc" />
-      </div>
-      <div class="form-group">
-        <label>Est. Audience Size</label>
-        <input type="text" placeholder="e.g. 50–100" id="fsize" />
-      </div>
-      <div class="form-group">
-        <label>Message Details <span class="req">*</span></label>
-        <textarea placeholder="Please share a little about your event or what you are looking for..." id="fmsg"></textarea>
+    <section class="section-pad fade-in" aria-labelledby="contact-heading">
+      <span class="section-label">Get in Touch</span>
+      <h1 id="contact-heading">I look forward to hearing from you and discussing how we might work together.</h1>
+
+      <!-- DIRECT CONTACT -->
+      <div style="margin-top: 32px;" aria-labelledby="direct-contact-heading">
+        <h2 id="direct-contact-heading">Direct Contact</h2>
+        <p>For general questions or pressing inquiries, please feel free to reach out directly using the contact information below.</p>
+
+        <ul style="list-style: none; margin-top: 20px;" aria-label="Contact information">
+          <li class="contact-row">
+            <span class="contact-icon" aria-hidden="true">&#9993;</span>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value"><a href="mailto:yourname@example.com" aria-label="Email Renee Bulwin at yourname@example.com">yourname@example.com</a></p>
+            </div>
+          </li>
+          <li class="contact-row">
+            <span class="contact-icon" aria-hidden="true">&#9990;</span>
+            <div>
+              <p class="contact-label">Phone</p>
+              <p class="contact-value"><a href="tel:5551234567" aria-label="Call Renee Bulwin at 555-123-4567">(555) 123-4567</a></p>
+            </div>
+          </li>
+          <li class="contact-row">
+            <span class="contact-icon" aria-hidden="true" style="font-size: 1.2rem;">&#9675;</span>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Available Nationwide &amp; Virtual</p>
+            </div>
+          </li>
+        </ul>
       </div>
 
-      <button class="btn-primary" onclick="prepareEmail()" style="width: 100%;">Prepare Email</button>
+      <!-- INQUIRY FORM -->
+      <div class="inquiry-form fade-in" aria-labelledby="form-heading">
+        <h2 id="form-heading">Send an Inquiry</h2>
+        <p class="form-note">Fill out the form below and it will open a pre-filled email to send to me. Required fields are marked with an asterisk <span aria-label="asterisk">*</span>.</p>
+
+        <div id="form-errors" role="alert" aria-live="polite" style="display:none; background:#fff3f3; border:1.5px solid #c0392b; border-radius:4px; padding:14px 18px; margin-bottom:20px; font-size:0.875rem; color:#c0392b;"></div>
+
+        <div class="form-group">
+          <label for="fname">Full Name <span class="req" aria-label="required">*</span></label>
+          <input type="text" id="fname" name="fname" placeholder="Jane Doe" autocomplete="name" aria-required="true" />
+          <p class="field-error" id="fname-error" role="alert">Please enter your full name.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="forg">Organization <span style="font-size:0.75rem; color:var(--text-light);">(Optional)</span></label>
+          <input type="text" id="forg" name="forg" placeholder="Wellness Center" autocomplete="organization" />
+        </div>
+
+        <div class="form-group">
+          <label for="femail">Email Address <span class="req" aria-label="required">*</span></label>
+          <input type="email" id="femail" name="femail" placeholder="jane@example.com" autocomplete="email" aria-required="true" />
+          <p class="field-error" id="femail-error" role="alert">Please enter a valid email address.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="fphone">Phone Number <span style="font-size:0.75rem; color:var(--text-light);">(Optional)</span></label>
+          <input type="tel" id="fphone" name="fphone" placeholder="(555) 123-4567" autocomplete="tel" />
+        </div>
+
+        <div class="form-group">
+          <label for="ftype">Type of Inquiry <span class="req" aria-label="required">*</span></label>
+          <select id="ftype" name="ftype" aria-required="true">
+            <option value="">Select one...</option>
+            <option value="Speaking Engagement">Speaking Engagement</option>
+            <option value="Workshop or Program">Workshop or Program</option>
+            <option value="Healing Circle">Healing Circle</option>
+            <option value="Reiki Session">Reiki Session</option>
+            <option value="Community Retreat">Community Retreat</option>
+            <option value="Other">Other</option>
+          </select>
+          <p class="field-error" id="ftype-error" role="alert">Please select a type of inquiry.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="fdate">Proposed Date <span style="font-size:0.75rem; color:var(--text-light);">(Optional)</span></label>
+          <input type="text" id="fdate" name="fdate" placeholder="e.g. Fall 2025" />
+        </div>
+
+        <div class="form-group">
+          <label for="floc">Location or Virtual <span style="font-size:0.75rem; color:var(--text-light);">(Optional)</span></label>
+          <input type="text" id="floc" name="floc" placeholder="City, State or Virtual" />
+        </div>
+
+        <div class="form-group">
+          <label for="fsize">Estimated Audience Size <span style="font-size:0.75rem; color:var(--text-light);">(Optional)</span></label>
+          <input type="text" id="fsize" name="fsize" placeholder="e.g. 50–100" />
+        </div>
+
+        <div class="form-group">
+          <label for="fmsg">Message Details <span class="req" aria-label="required">*</span></label>
+          <textarea id="fmsg" name="fmsg" placeholder="Please share a little about your event or what you are looking for..." aria-required="true"></textarea>
+          <p class="field-error" id="fmsg-error" role="alert">Please include a message with details about your inquiry.</p>
+        </div>
+
+        <button type="button" class="btn-primary" onclick="prepareEmail()" style="width: 100%;" aria-label="Prepare email inquiry">Prepare Email</button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-brand">
+      <p class="name">Renee Bulwin</p>
+      <span class="tagline">Bleed Into Purpose</span>
+      <p class="quote">"Healing begins the moment someone finally feels seen."</p>
+      <p class="footer-email"><a href="mailto:yourname@example.com" aria-label="Email Renee Bulwin">yourname@example.com</a></p>
     </div>
-  </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-nav-col">
+        <h2>Explore</h2>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="speaking.html">Speaking</a>
+        <a href="programs.html">Programs</a>
+      </div>
+      <div class="footer-nav-col">
+        <h2>Connect</h2>
+        <a href="resources.html">Resources</a>
+        <a href="booking.html" aria-current="page">Booking</a>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Renee Bulwin &middot; Bleed Into Purpose. All rights reserved.</p>
+      <p class="footer-disclaimer">This content is for educational and wellness support purposes only. It is not a replacement for therapy, medical care, or crisis support. If you are in crisis, please contact the <a href="https://988lifeline.org" target="_blank" rel="noopener noreferrer">988 Suicide &amp; Crisis Lifeline</a> by calling or texting <a href="tel:988">988</a>.</p>
+    </div>
+  </footer>
 
-</div>
+  <script>
+    // Nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    const menuLinks = menu.querySelectorAll('a');
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+      if (isOpen) menuLinks[0].focus();
+    });
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open navigation menu');
+        toggle.focus();
+      });
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open navigation menu');
+        toggle.focus();
+      }
+    });
 
-<div id="footer-container"></div>
-<script src="shared.js"></script>
-<script>
-  document.getElementById('nav-container').innerHTML = getNav('booking');
-  document.getElementById('footer-container').innerHTML = getFooter();
-  initPage();
+    // Fade-in
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-  function prepareEmail() {
-    const name = document.getElementById('fname').value;
-    const org = document.getElementById('forg').value;
-    const email = document.getElementById('femail').value;
-    const phone = document.getElementById('fphone').value;
-    const type = document.getElementById('ftype').value;
-    const date = document.getElementById('fdate').value;
-    const loc = document.getElementById('floc').value;
-    const size = document.getElementById('fsize').value;
-    const msg = document.getElementById('fmsg').value;
-
-    if (!name || !email || !type || !msg) {
-      alert('Please fill in the required fields: Full Name, Email, Type of Inquiry, and Message.');
-      return;
+    // Form validation and email
+    function setError(id, show) {
+      const field = document.getElementById(id);
+      const error = document.getElementById(id + '-error');
+      if (field && error) {
+        if (show) {
+          field.setAttribute('aria-invalid', 'true');
+          field.setAttribute('aria-describedby', id + '-error');
+          error.classList.add('visible');
+        } else {
+          field.removeAttribute('aria-invalid');
+          field.removeAttribute('aria-describedby');
+          error.classList.remove('visible');
+        }
+      }
     }
 
-    const subject = encodeURIComponent('Speaking Inquiry from ' + name);
-    const body = encodeURIComponent(
-      'Name: ' + name + '\n' +
-      (org ? 'Organization: ' + org + '\n' : '') +
-      'Email: ' + email + '\n' +
-      (phone ? 'Phone: ' + phone + '\n' : '') +
-      'Type of Inquiry: ' + type + '\n' +
-      (date ? 'Proposed Date: ' + date + '\n' : '') +
-      (loc ? 'Location: ' + loc + '\n' : '') +
-      (size ? 'Audience Size: ' + size + '\n' : '') +
-      '\nMessage:\n' + msg
-    );
+    function prepareEmail() {
+      const name = document.getElementById('fname').value.trim();
+      const org = document.getElementById('forg').value.trim();
+      const email = document.getElementById('femail').value.trim();
+      const phone = document.getElementById('fphone').value.trim();
+      const type = document.getElementById('ftype').value;
+      const date = document.getElementById('fdate').value.trim();
+      const loc = document.getElementById('floc').value.trim();
+      const size = document.getElementById('fsize').value.trim();
+      const msg = document.getElementById('fmsg').value.trim();
 
-    window.location.href = 'mailto:yourname@example.com?subject=' + subject + '&body=' + body;
-  }
-</script>
+      let hasErrors = false;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      setError('fname', !name);
+      setError('femail', !email || !emailRegex.test(email));
+      setError('ftype', !type);
+      setError('fmsg', !msg);
+
+      if (!name || !email || !emailRegex.test(email) || !type || !msg) {
+        hasErrors = true;
+      }
+
+      if (hasErrors) {
+        const errBox = document.getElementById('form-errors');
+        errBox.style.display = 'block';
+        errBox.textContent = 'Please correct the highlighted fields before submitting.';
+        errBox.focus();
+        return;
+      }
+
+      document.getElementById('form-errors').style.display = 'none';
+
+      const subject = encodeURIComponent('Speaking Inquiry from ' + name);
+      const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        (org ? 'Organization: ' + org + '\n' : '') +
+        'Email: ' + email + '\n' +
+        (phone ? 'Phone: ' + phone + '\n' : '') +
+        'Type of Inquiry: ' + type + '\n' +
+        (date ? 'Proposed Date: ' + date + '\n' : '') +
+        (loc ? 'Location: ' + loc + '\n' : '') +
+        (size ? 'Audience Size: ' + size + '\n' : '') +
+        '\nMessage:\n' + msg
+      );
+
+      window.location.href = 'mailto:yourname@example.com?subject=' + subject + '&body=' + body;
+    }
+  </script>
 </body>
 </html>
