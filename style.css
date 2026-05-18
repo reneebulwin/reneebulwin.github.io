@@ -252,12 +252,24 @@ p:last-child{margin-bottom:0;}
 }
 .image-section-img{width:100%;}
 @media(min-width:1024px){.image-section-img{width:50%;flex-shrink:0;}}
-/* Rectangular portrait — default for about/speaking/programs */
+/* Mobile: fixed height so image doesn't go huge when stacked */
 .image-section-img > img{
-  width:100%;aspect-ratio:4/5;object-fit:cover;
-  border-radius:var(--r-xl);box-shadow:var(--shadow-md);
+  width:100%;
+  height:340px;
+  object-fit:cover;
+  object-position:center 15%;
+  border-radius:var(--r-xl);
+  box-shadow:var(--shadow-md);
 }
-/* Circle wrapper override — home page headshot */
+/* Tablet and up: switch to 4/5 aspect ratio (matches Replit desktop) */
+@media(min-width:768px){
+  .image-section-img > img{
+    height:auto;
+    aspect-ratio:4/5;
+    object-position:center top;
+  }
+}
+/* Circle wrapper override — if ever used */
 .image-section-img > div > img{
   aspect-ratio:unset;border-radius:0 !important;box-shadow:none !important;
 }
