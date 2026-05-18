@@ -252,9 +252,14 @@ p:last-child{margin-bottom:0;}
 }
 .image-section-img{width:100%;}
 @media(min-width:1024px){.image-section-img{width:50%;flex-shrink:0;}}
-.image-section-img img{
+/* Rectangular portrait — default for about/speaking/programs */
+.image-section-img > img{
   width:100%;aspect-ratio:4/5;object-fit:cover;
   border-radius:var(--r-xl);box-shadow:var(--shadow-md);
+}
+/* Circle wrapper override — home page headshot */
+.image-section-img > div > img{
+  aspect-ratio:unset;border-radius:0 !important;box-shadow:none !important;
 }
 .image-section-text{width:100%;}
 @media(min-width:1024px){.image-section-text{width:50%;}}
