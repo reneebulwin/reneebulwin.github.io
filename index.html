@@ -164,21 +164,39 @@
   </div>
 
   <script>
+    // Transparent header → blur on scroll
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // Hamburger menu
     const toggle = document.querySelector('.nav-toggle');
     const menu = document.querySelector('.nav-menu');
-    toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      menu.classList.toggle('open', !expanded);
-      document.body.style.overflow = !expanded ? 'hidden' : '';
-    });
-    menu.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        toggle.setAttribute('aria-expanded', 'false');
-        menu.classList.remove('open');
-        document.body.style.overflow = '';
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('open', !expanded);
+        document.body.style.overflow = !expanded ? 'hidden' : '';
       });
-    });
+      menu.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          toggle.setAttribute('aria-expanded', 'false');
+          menu.classList.remove('open');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+
+    // Fade in on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    if (faders.length) {
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      faders.forEach(f => obs.observe(f));
+    }
     const faders = document.querySelectorAll('.fade-in');
     if (faders.length) {
       const observer = new IntersectionObserver(entries => {
@@ -189,3 +207,4 @@
   </script>
 </body>
 </html>
+
