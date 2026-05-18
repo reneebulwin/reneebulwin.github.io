@@ -1,159 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Renee Bulwin | Bleed Into Purpose</title>
-  <meta name="description" content="About Renee Bulwin — Founder of Bleed Into Purpose, Speaker, Author, and Reiki Practitioner. Her story of healing and purpose." />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Renée Bulwin | Bleed Into Purpose</title>
+  <meta name="description" content="About Renée Bulwin — Founder of Bleed Into Purpose, Speaker, Author, and Reiki Practitioner. Her story of healing and purpose.">
+  <meta name="author" content="Renée Bulwin">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://bleed-into-purpose.github.io/about.html">
+  <meta property="og:title" content="About Renée Bulwin | Bleed Into Purpose">
+  <meta property="og:description" content="Founder of Bleed Into Purpose, Speaker, Author, and Reiki Practitioner. Her story of healing and purpose.">
+  <meta property="og:image" content="https://bleed-into-purpose.github.io/images/renee-about.jpg">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://bleed-into-purpose.github.io/about.html">
+
+  <!-- Structured data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Renée Bulwin",
+    "jobTitle": "Speaker, Author, Reiki Practitioner",
+    "description": "Founder of Bleed Into Purpose. Trauma-informed speaker, author of Lost & Found, and Reiki practitioner.",
+    "url": "https://bleed-into-purpose.github.io/about.html",
+    "image": "https://bleed-into-purpose.github.io/images/renee-about.jpg",
+    "sameAs": []
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <header class="site-header" role="banner">
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="index.html" class="nav-brand" aria-label="Renee Bulwin — Bleed Into Purpose, go to home page">
-        <span class="name" aria-hidden="true">Renee Bulwin</span>
-        <span class="tagline" aria-hidden="true">Bleed Into Purpose</span>
+  <header role="banner">
+    <nav aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="Renée Bulwin – Bleed Into Purpose, home">
+        Renée Bulwin<br><span>Bleed Into Purpose</span>
       </a>
-      <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation menu">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </button>
+      <ul role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="booking.html" class="btn-nav">Book a Session</a></li>
+      </ul>
     </nav>
-    <div class="nav-menu" id="nav-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
-      <a href="index.html">Home</a>
-      <a href="about.html" aria-current="page">About</a>
-      <a href="speaking.html">Speaking</a>
-      <a href="programs.html">Programs</a>
-      <a href="resources.html">Resources</a>
-      <a href="booking.html">Booking</a>
-      <a href="booking.html" class="btn-menu">Book a Session</a>
-    </div>
   </header>
 
-  <main id="main-content" class="page-content">
+  <main id="main-content">
 
-    <section class="section-pad cream-bg fade-in" aria-labelledby="about-heading">
-      <span class="section-label">About Renee Bulwin</span>
-      <p style="font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-light); margin-bottom: 20px;">Founder of Bleed Into Purpose &middot; Speaker &middot; Author &middot; Reiki Practitioner</p>
+    <!-- Page intro -->
+    <section class="page-intro" aria-labelledby="about-page-heading">
+      <p class="eyebrow">About Renée Bulwin</p>
+      <p class="page-subtitle">Founder of Bleed Into Purpose · Speaker · Author · Reiki Practitioner</p>
+    </section>
 
-      <!-- Replace with real photo when available -->
-      <div class="photo-placeholder" style="height: 300px; border-radius: 4px; margin-bottom: 32px;" role="img" aria-label="Portrait of Renee Bulwin">[About photo — replace this div with: &lt;img src=&quot;images/renee-about.jpg&quot; alt=&quot;Portrait of Renee Bulwin, smiling, wearing earthy tones&quot; width=&quot;600&quot; height=&quot;300&quot; style=&quot;width:100%; height:300px; object-fit:cover; border-radius:4px;&quot;&gt;]</div>
+    <!-- Headshot portrait -->
+    <figure style="margin:0 0 2rem;">
+      <img
+        src="images/renee-about.jpg"
+        alt="Portrait of Renée Bulwin, founder of Bleed Into Purpose, smiling warmly"
+        width="600"
+        height="700"
+        style="width:100%; max-height:480px; object-fit:cover; object-position:center top; border-radius:6px;"
+        fetchpriority="high"
+      >
+      <figcaption class="sr-only">Renée Bulwin, founder of Bleed Into Purpose</figcaption>
+    </figure>
 
-      <h1 id="about-heading">Her Story</h1>
-      <p>I'm Renee — a woman who spent years surviving in silence before realizing that silence was never where healing was meant to live.</p>
+    <!-- Her story -->
+    <section aria-labelledby="story-heading">
+      <h1 id="story-heading">Her Story</h1>
+      <p>I'm Renée — a woman who spent years surviving in silence before realizing that silence was never where healing was meant to live.</p>
       <p>What I speak about isn't something I learned from the outside. It's something I lived through, carried quietly, questioned, buried, and eventually faced head-on. My journey through childhood trauma, shame, self-worth, and healing became the foundation for something much larger than the pain itself. It became purpose.</p>
-
       <blockquote>
-        "In my book Lost &amp; Found, I share the journey in full — the stumbling, the resilience, the way life somehow slowly repairs itself."
+        <p>"In my book <cite>Lost &amp; Found</cite>, I share the journey in full — the stumbling, the resilience, the way life somehow slowly repairs itself."</p>
       </blockquote>
-
       <blockquote>
-        "I believe healing begins the moment someone finally feels seen."
-        <cite>— Renee Bulwin, Lost &amp; Found</cite>
+        <p>"I believe healing begins the moment someone finally feels seen."</p>
+        <footer>— Renée Bulwin, <cite>Lost &amp; Found</cite></footer>
       </blockquote>
+    </section>
 
-      <hr class="divider" aria-hidden="true" />
+    <!-- AI image: soft light, healing -->
+    <img
+      src="images/about-warmth.jpg"
+      alt="Soft warm light filtering through sheer curtains onto a quiet, peaceful interior space"
+      width="1200"
+      height="260"
+      style="width:100%; max-height:260px; object-fit:cover; border-radius:6px; margin:2rem 0;"
+      loading="lazy"
+    >
 
-      <h2>Bleed Into Purpose</h2>
+    <!-- Bleed Into Purpose -->
+    <section aria-labelledby="bip-heading">
+      <h2 id="bip-heading">Bleed Into Purpose</h2>
       <p>Through Bleed Into Purpose, I speak openly about what many people are afraid to say out loud — the feeling of being discarded, the masks we wear to appear "fine," and the exhausting weight of pretending. My goal is not to speak at people, but to sit beside them in truth, honesty, and understanding.</p>
+    </section>
 
-      <h2 style="font-size: 1.1rem; margin-top: 24px;">Her Voice Is For</h2>
+    <!-- Her voice is for -->
+    <section aria-labelledby="voice-heading">
+      <h2 id="voice-heading">Her Voice Is For</h2>
       <p>Her voice is for the people who learned how to survive before they ever learned something different. For the ones who became strong too early. For the ones still carrying stories they were never supposed to carry alone.</p>
     </section>
 
-    <section class="section-pad fade-in" id="book" aria-labelledby="book-heading">
-      <div style="display: inline-block; background: var(--sage); color: white; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; margin-bottom: 12px;">Now Available</div>
+    <!-- Book -->
+    <section id="book" aria-labelledby="book-heading">
+      <p class="eyebrow">Now Available</p>
       <h2 id="book-heading">Lost &amp; Found</h2>
-      <p style="font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; color: var(--text);">What Was Buried Did Not Stay Lost</p>
-      <p style="margin-top: 12px;">Between silence, survival, and the journey back to yourself — the story of what happens when you stop keeping score. Renee shares the breaking points, the moments of silence, and the times she almost forgot to believe in herself — and begins to find something she thought was forever gone: herself.</p>
-      <a href="#" class="btn-outline" style="display: inline-flex; margin-top: 16px;" aria-label="Learn more about Lost and Found by Renee Bulwin">Learn More About the Book</a>
-    </section>
-
-    <section class="green-strip fade-in" aria-label="Quote from Renee Bulwin">
+      <p class="book-subtitle">What Was Buried Did Not Stay Lost</p>
+      <p>Between silence, survival, and the journey back to yourself — the story of what happens when you stop keeping score. Renée shares the breaking points, the moments of silence, and the times she almost forgot to believe in herself — and begins to find something she thought was forever gone: herself.</p>
+      <a href="#" aria-label="Learn more about Lost and Found by Renée Bulwin">Learn More About the Book</a>
       <blockquote>
-        "My goal is not to speak at people, but to sit beside them in truth, honesty, and understanding."
-        <cite>— Renee Bulwin, Lost &amp; Found</cite>
+        <p>"My goal is not to speak at people, but to sit beside them in truth, honesty, and understanding."</p>
+        <footer>— Renée Bulwin, <cite>Lost &amp; Found</cite></footer>
       </blockquote>
     </section>
 
-    <section class="section-pad cream-bg fade-in" aria-labelledby="bio-heading">
+    <!-- Speaker bio -->
+    <section aria-labelledby="bio-heading">
       <h2 id="bio-heading">Speaker Bio</h2>
-      <p>Renee Bulwin is the founder and voice of Bleed Into Purpose, a platform dedicated to speaking openly about childhood trauma, emotional healing, resilience, and personal transformation. Through her speaking, writing, and healing circles, her mission is to help others turn pain into purpose and reclaim their voice, identity, and strength.</p>
-      <a href="#" class="link-underline" aria-label="Download Renee Bulwin's headshot (opens download)">Download Headshot</a>
+      <p>Renée Bulwin is the founder and voice of Bleed Into Purpose, a platform dedicated to speaking openly about childhood trauma, emotional healing, resilience, and personal transformation. Through her speaking, writing, and healing circles, her mission is to help others turn pain into purpose and reclaim their voice, identity, and strength.</p>
+      <a href="images/renee-headshot-full.jpg" download="Renee-Bulwin-Headshot.jpg" aria-label="Download Renée Bulwin's official headshot (JPEG)">Download Headshot</a>
+    </section>
 
-      <hr class="divider" aria-hidden="true" />
-
-      <div style="text-align: center;">
-        <h2>Ready to explore a path to healing together?</h2>
-        <p>Whether you are looking to book a speaking engagement, organize a workshop, or join a healing circle, I would love to connect with you.</p>
-        <a href="booking.html" class="btn-primary" style="display: inline-flex; margin-top: 16px;">Get in Touch</a>
-      </div>
+    <!-- CTA -->
+    <section aria-labelledby="about-cta-heading">
+      <h2 id="about-cta-heading">Ready to explore a path to healing together?</h2>
+      <p>Whether you are looking to book a speaking engagement, organize a workshop, or join a healing circle, I would love to connect with you.</p>
+      <a href="booking.html" class="btn-primary">Get in Touch</a>
     </section>
 
   </main>
 
-  <footer class="site-footer" role="contentinfo">
+  <footer role="contentinfo">
     <div class="footer-brand">
-      <p class="name">Renee Bulwin</p>
-      <span class="tagline">Bleed Into Purpose</span>
-      <p class="quote">"Healing begins the moment someone finally feels seen."</p>
-      <p class="footer-email"><a href="mailto:yourname@example.com" aria-label="Email Renee Bulwin">yourname@example.com</a></p>
+      <p class="footer-name">Renée Bulwin</p>
+      <p class="footer-sub">Bleed Into Purpose</p>
+      <p class="footer-quote">"Healing begins the moment someone finally feels seen."</p>
     </div>
-    <nav class="footer-nav" aria-label="Footer navigation">
-      <div class="footer-nav-col">
-        <h2>Explore</h2>
-        <a href="index.html">Home</a>
-        <a href="about.html" aria-current="page">About</a>
-        <a href="speaking.html">Speaking</a>
-        <a href="programs.html">Programs</a>
-      </div>
-      <div class="footer-nav-col">
-        <h2>Connect</h2>
-        <a href="resources.html">Resources</a>
-        <a href="booking.html">Booking</a>
-      </div>
+    <nav aria-label="Footer navigation — Explore">
+      <h3>Explore</h3>
+      <ul role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="programs.html">Programs</a></li>
+      </ul>
     </nav>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Renee Bulwin &middot; Bleed Into Purpose. All rights reserved.</p>
-      <p class="footer-disclaimer">This content is for educational and wellness support purposes only. It is not a replacement for therapy, medical care, or crisis support. If you are in crisis, please contact the <a href="https://988lifeline.org" target="_blank" rel="noopener noreferrer">988 Suicide &amp; Crisis Lifeline</a> by calling or texting <a href="tel:988">988</a>.</p>
-    </div>
+    <nav aria-label="Footer navigation — Connect">
+      <h3>Connect</h3>
+      <ul role="list">
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+    </nav>
+    <p class="footer-legal">© 2026 Renée Bulwin · Bleed Into Purpose. All rights reserved.</p>
+    <p class="footer-disclaimer">This content is for educational and wellness support purposes only. It is not a replacement for therapy, medical care, or crisis support. If you are in crisis, please contact the <a href="https://988lifeline.org" rel="noopener noreferrer">988 Suicide &amp; Crisis Lifeline</a> by calling or texting <a href="tel:988">988</a>.</p>
   </footer>
 
-  <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const menu = document.getElementById('nav-menu');
-    const menuLinks = menu.querySelectorAll('a');
-    toggle.addEventListener('click', () => {
-      const isOpen = menu.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', isOpen);
-      toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
-      if (isOpen) menuLinks[0].focus();
-    });
-    menuLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        menu.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-        toggle.setAttribute('aria-label', 'Open navigation menu');
-        toggle.focus();
-      });
-    });
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape' && menu.classList.contains('open')) {
-        menu.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-        toggle.setAttribute('aria-label', 'Open navigation menu');
-        toggle.focus();
-      }
-    });
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>
